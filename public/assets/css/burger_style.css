@@ -1,0 +1,28 @@
+.div-content {
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    margin: auto;
+    overflow: auto;
+}
+    
+/*aside {
+    text-align: left;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    width: 33%;
+}*/
+    
+.aside-left {
+    text-align: left;
+    float: left;
+    width: 33%;
+}
+    
+.aside-right {
+    text-align: left;
+    float: right;
+    width: 33%;
+}
+

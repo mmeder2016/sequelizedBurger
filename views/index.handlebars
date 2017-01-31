@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="jumbotron">
+            <h1 class="text-center">BURGERS</h1>
+			<br>
+			<div class="text-center">
+	  			<img src="assets/img/burger.png"  class="rounded mx-auto d-block" height="200" width="200" alt="Big Burger">
+			</div>            
+        </div>
+    </div>
+
+	<div class="row">
+		<div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Un-eaten Burgers</h3>
+                </div>
+                <div class="panel-body">
+					<ol type="1">
+						{{#each burger_db}}
+							{{#unless this.devoured}}
+								<li>
+									<form action="/{{this.id}}?_method=PUT" method="POST">
+									    {{this.burger_name}}
+									    <button type="submit">DEVOUR IT!</button>
+									</form>
+								</li>
+							{{/unless}}
+						{{/each}}
+					</ol>
+                </div>
+            </div>
+		</div>
+
+		<div class="col-md-6">	
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Devoured Burgers</h3>
+                </div>
+                <div class="panel-body">
+					<ol type="1">
+						{{#each burger_db}}
+							{{#if this.devoured}}
+								<li>
+									{{this.burger_name}}
+								</li>
+							{{/if}}
+						{{/each}}
+					</ol>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add Burger</h3>
+                </div>
+                <div class="panel-body">
+					<form class="create-update-form" action="/" method="POST">
+						<div class="form-group">
+							<label for="burg">Burger Name:</label><br>
+							<input type="text" id="burg" name="name">
+						</div>
+						<button type="submit">Add Burger</button>
+					</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

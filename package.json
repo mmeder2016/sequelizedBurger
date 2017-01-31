@@ -1,0 +1,27 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "NW Homework Week 14 Node, Express, Handlebars, MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeder2016/burger.git"
+  },
+  "author": "Michael Meder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmeder2016/burger/issues"
+  },
+  "homepage": "https://github.com/mmeder2016/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.12.0",
+    "sequelize": "^3.30.1"
+  }
+}
