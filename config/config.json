@@ -14,9 +14,12 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "root",
-        "password": null,
-        "database": "burgers_db",
-        "dialect": "mysql"
+        "use_env_variable": "DATABASE_URL"
     }
+    // "production": {
+    //     "username": "root",
+    //     "password": null,
+    //     "database": "burgers_db",
+    //     "dialect": "mysql"
+    // }
 }
