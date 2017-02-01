@@ -1,0 +1,8 @@
+mysql://ksce604nttiqcakn:in7vraq9puju5cqf@ryvdxs57afyjk41z.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/wnn28l4q04o5mwbr
+
+Property	Value
+Host	ryvdxs57afyjk41z.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
+Username	ksce604nttiqcakn
+Password	
+in7vraq9puju5cqf  Reset
+Port	3306
