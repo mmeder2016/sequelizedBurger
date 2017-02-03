@@ -1,6 +1,6 @@
+'use strict';
 module.exports = function(sequelize, DataTypes) {
-    // Added package for timestamp
-    var SequelizeBurger = sequelize.define("SequelizeBurger", {
+    var SequelizeBurger = sequelize.define('SequelizeBurger', {
         id: {
             // sequelize-cli allows declarations differently
             // type: Sequelize.INTEGER,
@@ -24,6 +24,12 @@ module.exports = function(sequelize, DataTypes) {
         }
     }, {
         timestamps: false
+    }, {
+        classMethods: {
+            associate: function(models) {
+                // associations can be defined here
+            }
+        }
     });
     return SequelizeBurger;
 };
